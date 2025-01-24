@@ -1,0 +1,204 @@
+/* Algemene stijlen */
+.App {
+  min-height: 100vh;
+  padding: 20px;
+  transition: background 0.5s ease, color 0.5s ease;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Lichtmodus achtergronden */
+.sunny-bg {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+}
+
+.rainy-bg {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  color: white;
+}
+
+.cloudy-bg {
+  background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+  color: white;
+}
+
+.snowy-bg {
+  background: linear-gradient(135deg, #e6e9f0, #eef1f5);
+}
+
+.default-bg {
+  background: linear-gradient(135deg, #f0f0f0, #c9c9c9);
+}
+
+/* Donkere modus achtergronden */
+.dark-sunny-bg {
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+  color: white;
+}
+
+.dark-rainy-bg {
+  background: linear-gradient(135deg, #1e3a8a, #1e40af);
+  color: white;
+}
+
+.dark-cloudy-bg {
+  background: linear-gradient(135deg, #4b5563, #374151);
+  color: white;
+}
+
+.dark-snowy-bg {
+  background: linear-gradient(135deg, #6b7280, #9ca3af);
+  color: white;
+}
+
+.dark-default-bg {
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: white;
+}
+
+/* Dark Mode / Light Mode Toggle */
+.mode-toggle {
+  background-color: #333;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.mode-toggle:hover {
+  background-color: #444;
+}
+
+/* Formulier en knoppen */
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.favorite-button {
+  background-color: #ffcc00;
+  color: #000;
+  margin-top: 10px;
+}
+
+.favorite-button:hover {
+  background-color: #e6b800;
+}
+
+/* Weerinfo */
+.weather-info {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.weather-info h2 {
+  margin-bottom: 10px;
+}
+
+.weather-info img {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-info p {
+  margin: 5px 0;
+}
+
+/* Favorieten en zoekgeschiedenis */
+.favorites, .search-history {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.favorites ul, .search-history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.favorites li, .search-history li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  transition: background 0.3s ease;
+}
+
+.favorites li:hover, .search-history li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.favorites button, .search-history button {
+  background-color: #dc3545;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.favorites button:hover {
+  background-color: #c82333;
+}
+
+.forecast {
+  margin-top: 20px;
+}
+
+.forecast-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 150px;
+}
+
+.forecast-card h4 {
+  margin-bottom: 10px;
+}
+
+.forecast-card img {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast-card p {
+  margin: 5px 0;
+}
